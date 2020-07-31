@@ -1,0 +1,19 @@
+/* CSS for the entire dashboard screen */
+.dashboardContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #43425D;
+}
+/* CSS for the graph section of the dahsboard */
+.graphSection{
+
+}
+
+.waterImage {
+  width: 10vw;
+}
+
+
+.cardData {
+  font-size: 8vh;
+}
