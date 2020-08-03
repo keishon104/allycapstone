@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {XYPlot, LineSeries} from 'react-vis';
+import {XYPlot, BarSeries} from 'react-vis';
 import './graph.css';
 
 
@@ -15,8 +16,22 @@ class Graph extends Component {
       {x: 6, y: 6},
       {x: 7, y: 3},
       {x: 8, y: 2},
-      {x: 9, y: 0}
+      {x: 9, y: 0},
+
     ];
+
+class BarSeries extends Component {
+  render(){
+      const data = this.props.data;
+      const chartWidth = 300;
+      const chartHeight = 500;
+      const chartDomain = [0, chartHeight];
+      return (
+         <div>BarSeries!</div>)
+      );
+    }
+  }
+
 
     return(
       <div>
