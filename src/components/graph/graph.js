@@ -1,27 +1,46 @@
 import React, {Component} from 'react';
-import {XYPlot, LineSeries} from 'react-vis';
+import {XYPlot, LineSeries, XAxis, YAxis, VerticalBarSeries, LabelSeries} from 'react-vis';
 import './graph.css';
 
 
 class Graph extends Component {
   render(){
     const graphData = [
-      {x: 0, y: 8},
-      {x: 1, y: 5},
-      {x: 2, y: 4},
-      {x: 3, y: 9},
-      {x: 4, y: 1},
-      {x: 5, y: 7},
-      {x: 6, y: 6},
-      {x: 7, y: 3},
-      {x: 8, y: 2},
-      {x: 9, y: 0}
+      {x: "Monday", y: 2},
+      {x: "Tuesday", y: 3},
+      {x: "Wednesday", y: 1},
+      {x: "Thursday", y: 4},
+      {x: "Friday", y: 3},
+      {x: "Saturday", y: 1},
+      {x: "Sunday", y: 1},
     ];
+
+    const graphData2 = [
+      {x: "Monday", y: 3},
+      {x: "Tuesday", y: 3},
+      {x: "Wednesday", y: 3},
+      {x: "Thursday", y: 3},
+      {x: "Friday", y: 3},
+      {x: "Saturday", y: 3},
+      {x: "Sunday", y: 3},
+    ];
+    const graphWidth = 900;
+    const graphHeight = 300;
+    const graphDomain = [0, 5];
 
     return(
       <div>
-        <XYPlot height={300} width={300}>
-          <LineSeries data={graphData} />
+        <XYPlot xType="ordinal" width={graphWidth} height={graphHeight} yDomain={graphDomain}>
+                <XAxis />
+                <YAxis />
+          <VerticalBarSeries data={graphData} />
+          <LineSeries data={graphData2} />
+          <LabelSeries
+                    data={graphData.map(obj => {
+                        return { ...obj, label: obj.y.toString() }
+                    })}
+                    labelAnchorX="middle"
+                    labelAnchorY="text-after-edge" />
         </XYPlot>
       </div>
     )
