@@ -14,9 +14,9 @@ buttonClick = () => {
 }
 
 // Correct data structure
-data = [{name:"Water Consumption", color:"primary", units:"Gal", amount:"1.2", message:"You're on track", image:waterImage},
-        {name:"Footsteps", color:"info", units:"Steps", amount:"1.5K", message:"You need to stop", image:stepImage},
-        {name:"Calorie Burn", color:"danger", units:"Cal", amount:"6K", message:"You might want to starve for a couple of days", image:calorieImage, backgroundColor:"linear-gradient(45deg, #ff3b70, #8d2440)"},
+ data = [{name:"Water Consumption", color:"primary", units:"Gal", amount:"1.2", message:"You're on track", image:waterImage, backgroundColor:"linear-gradient(45deg, #1E4380, #3B86FF)"},
+        {name:"Footsteps", color:"info", units:"Steps", amount:"1.5K", message:"You need to stop", image:stepImage, backgroundColor:"linear-gradient(45deg, #286E77, #3FC0D1)"},
+        {name:"Calorie Burn", color:"danger", units:"Cal", amount:"6K", message:"You might want to starve for a couple of days", image:calorieImage, backgroundColor:"linear-gradient(45deg, #8D2440, #FF3B70)"},
        ];
 
   render(){
@@ -25,7 +25,7 @@ data = [{name:"Water Consumption", color:"primary", units:"Gal", amount:"1.2", m
       <Row>
       {this.data.map((cardData, idx)=> (
         <Col key={idx}>
-            <Card bg={cardData.color} style={{ width: '18rem', borderRadius:'1.5rem' }} className="card" onClick={this.buttonClick}>
+            <Card bg={cardData.color} style={{ width: '18rem', borderRadius:'1.5rem', background:cardData.backgroundColor }} className="card" onClick={this.buttonClick}>
               <Card.Body>
                 <Card.Title><img src={cardData.image}className="cardImage" alt="Missing Image"/></Card.Title>
                 <Card.Title className="cardAmount" style={{fontSize:"7rem"}}>{cardData.amount}</Card.Title>

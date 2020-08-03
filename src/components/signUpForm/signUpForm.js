@@ -21,7 +21,7 @@ class SignUpForm extends Component {
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
-
+          
           <Form.Group controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
@@ -32,7 +32,7 @@ class SignUpForm extends Component {
             <Form.Check type="checkbox" label="I agree with terms and conditions" />
           </Form.Group>
           <Row>
-              <Link to="/dashboard"><Button variant="primary" type="submit"> Sign Up </Button></Link>
+              <Link to="/goals"><Button variant="primary" type="submit"> Sign Up </Button></Link>
           </Row>
         </Form>
       </div>

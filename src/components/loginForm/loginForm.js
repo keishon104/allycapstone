@@ -8,7 +8,7 @@ class LoginForm extends Component {
       <div>
         <Form>
           <Form.Group controlId="formBasicEmail">
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="username" />
           </Form.Group>
 
           <Form.Group controlId="formBasicPassword">
