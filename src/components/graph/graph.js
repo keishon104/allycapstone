@@ -4,7 +4,25 @@ import './graph.css';
 
 
 class Graph extends Component {
+  state = {
+    mockData: [],
+  }
+
+   tempMockData = [
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+    {water: 1, calories: 23, steps:2},
+  ];
+
+  componentDidMount() {
+
+  }
   render(){
+
     const graphData = [
       {x: "Monday", y: 2},
       {x: "Tuesday", y: 3},
@@ -66,13 +84,10 @@ class Graph extends Component {
     ];
 
     const mockData = [
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
-      {water: 1, calories: 23, steps:2},
+      {id: "0", water: "1", calories: "500", steps:"123"},
+      {id: "1", water: "22", calories: "400", steps:"222"},
+      {id: "2", water: "4", calories: "230", steps:"59"},
+
     ];
     const graphWidth = 900;
     const graphHeight = 300;
@@ -81,42 +96,38 @@ class Graph extends Component {
     return(
       <div>
         <XYPlot xType="ordinal" width={graphWidth} height={graphHeight} yDomain={graphDomain}>
-                <XAxis />
-          <LineSeries 
-              color = "#ee3769" 
-              style={{strokeWidth: 3}} 
-              data={calorieData2} />      
-          <VerticalBarSeries 
+          <XAxis />
+              
+          <LineSeries
               color = "#316fd5"
-              data={graphData} />
-          <LineSeries 
-              color = "#316fd5" 
-              style={{strokeWidth: 3}} 
+              style={{strokeWidth: 3}}
               data={graphData2} />
-          <VerticalBarSeries 
+          <VerticalBarSeries
               color = "#3bb1c1"
-              data = {stepsData} />
-          <LineSeries 
-              color = "#3bb1c1" 
-              style={{strokeWidth: 3}} 
+              data = {this.tempMockData} />
+          <LineSeries
+              color = "#3bb1c1"
+              style={{strokeWidth: 3}}
               data={stepsData2} />
-          <VerticalBarSeries 
+          <VerticalBarSeries
               color = "#ee3769"
-              data={calorieData} />
+              data={this.tempMockData} /> 
+
+
           <DiscreteColorLegend
             style={{position: 'absolute', right: '550px', top: '10px', color: "#ffffffb3"}}
             orientation="horizontal"
             items={[
               {
-                title: 'Water',
+                title: 'water',
                 color: '#316fd5'
               },
               {
-                title: 'Steps',
+                title: 'steps',
                 color: '#3bb1c1'
               },
               {
-                title: 'Calories',
+                title: 'calories',
                 color: "#ee3769"
               }
             ]}

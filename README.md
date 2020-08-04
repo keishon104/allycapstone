@@ -66,3 +66,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+#### Clipper Code:
+//
+// fetch("https://enigmatic-shelf-30666.herokuapp.com/fitnessappx ")
+//   .then(res => res.json())
+//   .then(
+//     (result) => {
+//       this.setState({
+//         mockData: result,
+//       });
+//     },
+//     // Note: it's important to handle errors here
+//     // instead of a catch() block so that we don't swallow
+//     // exceptions from actual bugs in components.
+//     (error) => {
+//       console.log("Temp MockData Set UP");
+//       this.setState({
+//         mockData: this.tempMockData
+//       });
+//     }
+//   )
