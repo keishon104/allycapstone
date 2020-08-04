@@ -1,25 +1,25 @@
 import React from 'react';
 import './signup.css';
-import {Container,Col, Row} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 import SignUpForm from '../signUpForm/signUpForm';
 // Import image
 import track from '../../assets/images/track.jpg';
 
 const SignUp = () => {
-  return <div>
+  return <div className="signUpWrapper">
     <Row>
-      <Col><img src={track} className="signUpImage"/></Col>
-      <Col>
+      <div><img src={track} className="signUpImage"/></div>
+      <div className="signUpRightSide">
         <Row>
           <h1>Fitness App X</h1>
         </Row>
         <Row>
           <p>Please complete to create an account</p>
         </Row>
-        <Row>
+        <div>
           <SignUpForm/>
-        </Row>
-      </Col>
+        </div>
+      </div>
     </Row>
   </div>
 }

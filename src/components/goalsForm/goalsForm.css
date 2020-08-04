@@ -3,7 +3,26 @@
   text-align: center;
 }
 
+.goalsCard {
+  justify-content: center;
+}
 
 .goalsImage {
   width: 15rem;
+}
+
+
+.buttonSection {
+  padding-top: 4rem;
+}
+
+.cancelButton {
+  margin-right: 4rem;
+  width: 8rem;
+}
+
+
+
+.completeButton {
+  width: 8rem;
 }

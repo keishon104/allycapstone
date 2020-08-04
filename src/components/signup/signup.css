@@ -1,4 +1,13 @@
+.signUpWrapper {
+  width: 100vw;
+}
+
 .signUpImage {
   height: 100vh;
+  width: 50vw;
+}
+
+
+.signUpRightSide {
   width: 50vw;
 }

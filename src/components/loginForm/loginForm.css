@@ -1,0 +1,22 @@
+
+
+.loginFormWrapper {
+  width: 50vw;
+  text-align: center;
+}
+
+.buttonSection {
+  justify-content: center;
+}
+
+
+.loginButton {
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+
+.signUpButton {
+  width: 7rem;
+  margin-left: 1rem;
+}

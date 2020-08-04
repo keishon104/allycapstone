@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import './signUpForm.css';
 
 class SignUpForm extends Component {
   render(){
     return(
-      <div>
+      <div className="signUpForm">
         <Form>
           <Row>
-            <Col>
+            <div>
               <Form.Control placeholder="First name" />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <Form.Control placeholder="Last name" />
-            </Col>
+            </div>
           </Row>
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="email" placeholder="username" />
@@ -21,7 +22,7 @@ class SignUpForm extends Component {
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
-          
+
           <Form.Group controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
@@ -31,9 +32,9 @@ class SignUpForm extends Component {
           <Form.Group controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="I agree with terms and conditions" />
           </Form.Group>
-          <Row>
-              <Link to="/goals"><Button variant="primary" type="submit"> Sign Up </Button></Link>
-          </Row>
+          <div className="signUpButtonSection">
+              <Link to="/goals"><Button variant="primary" type="submit" className="signUpButton"> Sign Up </Button></Link>
+          </div>
         </Form>
       </div>
     )
