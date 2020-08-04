@@ -23,7 +23,7 @@ class GoalsForm extends Component {
         <div><h1>Tell Us About Your Goals</h1></div>
         <Row className="goalsCard">
           {this.data2.map((goalDataX, idx)=>(
-            <div key={idx}>
+            <div key={idx} className="goalsCardI">
               <img src={goalDataX.image} alt="Missign image" className="goalsImage"/>
               <p>{goalDataX.name}</p>
               <Form>

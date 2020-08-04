@@ -1,7 +1,15 @@
+.signUpForm {
+width:24rem;
+}
 .signUpButtonSection {
   text-align: center;
 }
 
+.signUpFormName {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
 .signUpButton {
-  
+
 }
