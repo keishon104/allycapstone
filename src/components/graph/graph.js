@@ -18,6 +18,7 @@ class Graph extends Component {
             data: this.parseData(rawData)
           });
         });
+<<<<<<< HEAD
   }
 
   parseData(rawData) {
@@ -58,6 +59,48 @@ class Graph extends Component {
     });
   }
 
+=======
+  }
+
+  parseData(rawData) {
+
+    const maximums = rawData.reduce((maxes, value) => {
+      return {
+        water: maxes.water < value.water ? value.water : maxes.water,
+        steps: maxes.steps < value.steps ? value.steps : maxes.steps,
+        calories: maxes.calories < value.calories ? value.calories : maxes.calories 
+      };
+    }, {
+      water: 0,
+      steps: 0,
+      calories: 0
+    });
+
+    return rawData.reduce((data, value) => {
+      data.water.push({
+        x: value.created,
+        y: value.water / maximums.water
+      });
+    
+      data.steps.push({
+        x: value.created,
+        y: value.steps / maximums.steps
+      });
+    
+      data.calories.push({
+        x: value.created,
+        y: value.calories / maximums.calories
+      });
+    
+      return data;
+    }, {
+      water: [],
+      steps: [],
+      calories: []
+    });
+  }
+
+>>>>>>> master
   render(){
 
     const graphWidth = 900;
@@ -84,14 +127,22 @@ class Graph extends Component {
               data={this.state.data.steps} />
           <VerticalBarSeries
               color = "#3bb1c1"
+<<<<<<< HEAD
               data={this.state.data.steps} />
+=======
+              data={this.state.data.steps} /> 
+>>>>>>> master
           <LineSeries
               color = "#ee3769"
               style={{strokeWidth: 3}}
               data={this.state.data.calories} />
           <VerticalBarSeries
               color = "#ee3769"
+<<<<<<< HEAD
               data={this.state.data.calories} />
+=======
+              data={this.state.data.calories} /> 
+>>>>>>> master
 
 
           <DiscreteColorLegend
