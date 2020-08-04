@@ -65,6 +65,15 @@ class Graph extends Component {
       {x: "Sunday", y: 7},
     ];
 
+    const mockData = [
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+      {water: 1, calories: 23, steps:2},
+    ];
     const graphWidth = 900;
     const graphHeight = 300;
     const graphDomain = [0, 10];
@@ -112,13 +121,6 @@ class Graph extends Component {
               }
             ]}
           />
-          <LabelSeries
-                    data={graphData2.map(obj => {
-                        return { ...obj, label: obj.y.toString() }
-                    })}
-                    labelAnchorX="middle"
-                    labelAnchorY="text-after-edge" 
-                    />
         </XYPlot>
       </div>
     )
