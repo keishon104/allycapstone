@@ -25,6 +25,7 @@ class Graph extends Component {
       {x: "Sunday", y: 3},
     ];
 
+<<<<<<< Updated upstream
     const stepsData = [
       {x: "Monday", y: 23},
       {x: "Tuesday", y: 9},
@@ -65,6 +66,8 @@ class Graph extends Component {
       {x: "Sunday", y: 7},
     ];
 
+=======
+>>>>>>> Stashed changes
     const graphWidth = 900;
     const graphHeight = 300;
     const graphDomain = [0, 10];

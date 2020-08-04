@@ -1,0 +1,12 @@
+.graphData {
+    color: yellow;
+    fill: yellow;
+    text-fill: White;
+
+  }
+
+  .graphData {
+    text-align: inherit;
+    text-rendering: optimizeLegibility;
+    fill: seashell;
+  }
