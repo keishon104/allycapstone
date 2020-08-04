@@ -8,6 +8,21 @@
 }
 
 
+
 .signUpRightSide {
   width: 50vw;
+}
+
+.signUpTitle {
+  justify-content: center;
+}
+
+.signUpSubTitle {
+  justify-content: center;
+}
+
+
+.signUpFormWrapper {
+  width: 50vw;
+  text-align: -webkit-center;
 }

@@ -13,7 +13,7 @@ class LoginForm extends Component {
         <div>
           <p>Welcome back! Please sign into your account</p>
         </div>
-        <Form>
+        <Form className="loginFormInput">
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="email" placeholder="username" />
           </Form.Group>

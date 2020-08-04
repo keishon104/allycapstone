@@ -3,6 +3,11 @@
 .loginFormWrapper {
   width: 50vw;
   text-align: center;
+  text-align: -webkit-center;
+}
+
+.loginFormInput {
+  width: 24rem;
 }
 
 .buttonSection {

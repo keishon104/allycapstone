@@ -10,13 +10,13 @@ const SignUp = () => {
     <Row>
       <div><img src={track} className="signUpImage"/></div>
       <div className="signUpRightSide">
-        <Row>
+        <Row className="signUpTitle">
           <h1>Fitness App X</h1>
         </Row>
-        <Row>
+        <Row className="signUpSubTitle">
           <p>Please complete to create an account</p>
         </Row>
-        <div>
+        <div className="signUpFormWrapper">
           <SignUpForm/>
         </div>
       </div>

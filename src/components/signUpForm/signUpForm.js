@@ -8,7 +8,7 @@ class SignUpForm extends Component {
     return(
       <div className="signUpForm">
         <Form>
-          <Row>
+          <Row className="signUpFormName">
             <div>
               <Form.Control placeholder="First name" />
             </div>
