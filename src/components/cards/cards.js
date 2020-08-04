@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Card, Row, Col, Container, Button} from 'react-bootstrap';
+import {Card, Row, Col} from 'react-bootstrap';
 import waterImage from '../../../src/assets/icons/water.png';
 import stepImage from '../../../src/assets/icons/steps.png';
 import calorieImage from '../../../src/assets/icons/calories_burn.png';

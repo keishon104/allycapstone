@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Dashboard from './components/dashboard/dashboard';
-import {Container, Button} from 'react-bootstrap';
 import {Route, Switch} from 'react-router-dom';
 // importing Page
 import Login from './components/login/login.js';
