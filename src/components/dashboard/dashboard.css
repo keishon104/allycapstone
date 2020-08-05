@@ -6,7 +6,7 @@
 }
 /* CSS for the graph section of the dahsboard */
 .graphSection{
-
+  justify-content: center;
 }
 
 .waterImage {

@@ -11,7 +11,7 @@ const Login = () => {
   return <div className="loginWrapper">
           <Row>
             <div><img src={workout1} className="loginImage"/></div>
-            <div>
+            <div className="loginRightSide">
               <LoginForm/>
             </div>
           </Row>

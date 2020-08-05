@@ -8,9 +8,10 @@
 }
 
 
-
 .signUpRightSide {
   width: 50vw;
+  color: #43425D;
+  margin-top: 14rem;
 }
 
 .signUpTitle {
@@ -19,6 +20,7 @@
 
 .signUpSubTitle {
   justify-content: center;
+  opacity: 50%;
 }
 
 

@@ -15,3 +15,19 @@
   text-align: center;
   font-size: 100rem;
 }
+
+.cardInput {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.text-muted {
+  color: #e9f2fb!important;
+}

@@ -27,8 +27,8 @@ buttonClick = () => {
         <Col key={idx}>
             <Card bg={cardData.color} style={{ width: '18rem', borderRadius:'1.5rem', background:cardData.backgroundColor }} className="card" onClick={this.buttonClick}>
               <Card.Body>
-                <Card.Title><img src={cardData.image}className="cardImage" alt="Missing Image"/></Card.Title>
-                <Card.Title className="cardAmount" style={{fontSize:"7rem"}}>{cardData.amount}</Card.Title>
+                <Card.Title><img src={cardData.image}className="cardImage" alt={cardData.name}/></Card.Title>
+                <Card.Title className="cardAmount" style={{fontSize:"7rem"}}><input type="number" min="0" name="number" placeholder={cardData.amount} className="cardInput"/></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{cardData.units}</Card.Subtitle>
                 <Card.Text>
                   {cardData.message}
