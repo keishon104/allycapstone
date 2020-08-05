@@ -4,12 +4,25 @@
   width: 50vw;
   text-align: center;
   text-align: -webkit-center;
+  margin-top: 14rem;
+  color: #43425D;
+}
+
+.loginFormSubTitle {
+  opacity: 50%;
 }
 
 .loginFormInput {
   width: 24rem;
 }
 
+.inputForm {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 .buttonSection {
   justify-content: center;
 }
@@ -24,4 +37,15 @@
 .signUpButton {
   width: 7rem;
   margin-left: 1rem;
+  background-color: transparent;
+  border-color: #43425D;
+  color: #43425D;
+}
+
+
+.buttonSection.signUpButton {
+  background-color: transparent;
+  border-color: #43425D;
+  color: #43425D;
+
 }

@@ -33,7 +33,7 @@ class SignUpForm extends Component {
             <Form.Check type="checkbox" label="I agree with terms and conditions" />
           </Form.Group>
           <div className="signUpButtonSection">
-              <Link to="/goals"><Button variant="primary" type="submit" className="signUpButton"> Sign Up </Button></Link>
+              <Link to="/goals"><Button variant="primary" type="submit" className="signUpButton" style={{backgroundColor: "#43425D", color:"white", borderColor: "#43425D"}}> Sign Up </Button></Link>
           </div>
         </Form>
       </div>

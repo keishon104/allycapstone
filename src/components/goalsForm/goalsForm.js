@@ -34,8 +34,8 @@ class GoalsForm extends Component {
             </div>))}
         </Row>
         <div className="buttonSection">
-          <Link to="/signup"><Button onclick="/dashboard" className="cancelButton">Cancel</Button></Link>
-          <Link to="/dashboard"><Button onclick="/dashboard" className="completeButton">Complete</Button></Link>
+          <Link to="/signup"><Button onclick="/dashboard" className="cancelButton" style={{backgroundColor:"transparent", borderColor:"white"}}>Cancel</Button></Link>
+          <Link to="/dashboard"><Button onclick="/dashboard" className="completeButton" style={{backgroundColor:"transparent", borderColor:"white"}}>Complete</Button></Link>
         </div>
       </div>
     )
