@@ -92,7 +92,7 @@ class Graph extends Component {
     const graphWidth = 900;
     const graphHeight = 300;
 
-    if(!this.state.data || !this.state.data.water.length || !this.state.user) return <div></div>;
+    if(!this.state.data || !this.state.data.water.length || !this.state.user) return <div><h1>Check back tomorrow to view your data</h1></div>;
 
     let goalLineData = {
       water: [],
