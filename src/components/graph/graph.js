@@ -150,7 +150,7 @@ class Graph extends Component {
 
 
           <DiscreteColorLegend
-            style={{position: 'absolute', right: '550px', top: '10px', color: "#ffffffb3"}}
+            style={{position: 'absolute', right: '450px', top: '10px', color: "#ffffffb3"}}
             orientation="horizontal"
             items={[
               {
